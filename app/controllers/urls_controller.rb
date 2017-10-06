@@ -9,7 +9,7 @@ class UrlsController < ApplicationController
     end
   end
   def show
-    debugger
+    
 @url = Url.find_by_short_url(params[:id])
 redirect_to  @url.long_url
   end
